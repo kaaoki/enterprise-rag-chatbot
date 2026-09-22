@@ -2,14 +2,11 @@
 
 指定した資料（PDF）の内容だけを根拠に回答する、RAG（検索拡張生成）構成のチャットボットです。
 以前作成したStreamlit版RAGデモ（[RAG-Document-QA-Chatbot](https://github.com/kaaoki/RAG-Document-QA-Chatbot)）の検索・生成ロジックをベースに、
-エンタープライズ向けRAGチャットボット開発案件（必須スキル: Python/RESTful API/Pytest、または Next.js/React）を想定して、
-FastAPI + Next.js/React構成に発展させたものです。
+エンタープライズ向けRAGチャットボットを想定して、FastAPI + Next.js/React構成に発展させたものです。
 
 ## 背景・課題
 
-案件の必須スキルが「バックエンド(Python/FastAPI/Pytest)」「フロントエンド(Next.js/React)」のいずれかだったため、
-既存のStreamlit一体型のRAGロジックを、REST API（バックエンド）とUI（フロントエンド）に分離し、
-Pytestによるテストも整備した。
+既存のStreamlit一体型のRAGロジックを、REST API（バックエンド）とUI（フロントエンド）に分離し、Pytestによるテストも整備した。
 
 開発途中、埋め込み・生成に使っていたGoogle Gemini APIで、AI Studio発行の新形式APIキー（`AQ.`から始まる形式）が
 `401 UNAUTHENTICATED — ACCESS_TOKEN_TYPE_UNSUPPORTED`エラーを返す既知の不具合に遭遇したため、
