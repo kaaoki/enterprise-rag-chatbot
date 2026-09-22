@@ -1,0 +1,16 @@
+# --- Python (backend) ---
+backend/**/__pycache__/
+backend/.pytest_cache/
+backend/**/*.pyc
+backend/chroma_db/
+# 検索対象のPDFは、ライセンス上の理由から個人ごとに用意するためコミットしない
+backend/docs/
+
+# --- Node / Next.js (frontend) ---
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+
+# --- OS ---
+.DS_Store
+Thumbs.db
